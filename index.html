@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Sistemas Numéricos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabecera con logotipo y menú -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Conversor" /> <!-- Asegúrate de tener un archivo de logotipo llamado 'logo.png' -->
+            <h1>Conversor de Sistemas Numéricos(Omar Yesid Mancipe Luis)</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido Principal -->
+    <main>
+        <section class="converter-section">
+            <h2>Convierte Números entre Diferentes Sistemas</h2>
+            <form id="conversionForm">
+                <label for="number">Número:</label>
+                <input type="text" id="number" name="number" required>
+                
+                <label for="fromBase">De:</label>
+                <select id="fromBase" name="fromBase">
+                    <option value="2">Binario</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+                
+                <label for="toBase">A:</label>
+                <select id="toBase" name="toBase">
+                    <option value="2">Binario</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+                
+                <button type="button" onclick="convert()">Convertir</button>
+            </form>
+            
+            <h2>Resultado:</h2>
+            <p id="result"></p>
+        </section>
+        
+        <!-- Sección de Información sobre los Sistemas Numéricos -->
+        <section id="informacion">
+            <h2>Información sobre los Sistemas Numéricos</h2>
+            <p>Existen diferentes sistemas numéricos, cada uno con una base diferente:</p>
+            <ul>
+                <li><strong>Binario (Base 2):</strong> Utiliza solo los dígitos 0 y 1. Es el sistema usado en computación.</li>
+                <li><strong>Octal (Base 8):</strong> Utiliza los dígitos del 0 al 7. Fue utilizado en la informática temprana.</li>
+                <li><strong>Decimal (Base 10):</strong> Es el sistema que utilizamos en la vida cotidiana. Utiliza los dígitos del 0 al 9.</li>
+                <li><strong>Hexadecimal (Base 16):</strong> Utiliza los dígitos del 0 al 9 y las letras A a F. Es comúnmente utilizado en programación.</li>
+            </ul>
+            <h3>Video Educativo</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g9-MRBBcvdg?si=uiHNwyoXMr0Iu6pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        
+        
+    </main>
+    
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>&copy; 2024 Conversor de Sistemas Numéricos. Ingenieria Eléctronica</p>
+        <p><a href="mailto:contacto@conversor.com">omar.mancipe01@Uptc.edu.co</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
